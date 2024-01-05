@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600;700&display=swap');
+
+*{
+    direction: rtl;
+    font-family: 'El Messiri', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background: linear-gradient(45deg,#240165,#05001c);
+}
+.p{
+    width: 95%;
+    margin: auto;
+    height: calc(100vh - 50px);
+}
+.info{
+    height: 20%;
+}
+#city{
+    margin-top: 50px;
+    font-size: 60px;
+}
+.container{
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#card{
+    width: calc(100vw/8);
+    height: 200px;
+    border: solid;
+    text-align: center;
+    margin: auto;
+}
+.head{
+    background-color: white;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#head{
+    color: #05001c;
+}
+.body{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select{
+    height: 10%;
+    margin: auto;
+    text-align: center;
+}
+.select select{
+    background-color: #240165;
+    width: 150px;
+    border-radius: 999px;
+    padding: 1px 5px;
+}
+@media (max-width: 1024px){
+    #card{
+        width: calc(100vw/4);
+    }
+}
+@media (max-width: 600px){
+    #card{
+        width: calc(100vw/2);
+    }
+    .p{
+        height: fit-content;
+    }
+    .container{
+        margin: 50px auto;
+    }
+    .select{
+        margin-bottom: 30px;
+    }
+}
